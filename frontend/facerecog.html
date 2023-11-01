@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+      <!-- Basic Page Needs
+   ================================================== -->
+      
+   <meta charset="utf-8">
+      <title>My New Page</title>
+      
+   <meta name="description" content="">
+      
+   <meta name="author" content="">
+
+      <!-- Mobile Specific Metas
+   ================================================== -->
+      
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+      <!-- CSS
+    ================================================== -->
+      
+   <link rel="stylesheet" href="css/default.css">
+      
+   <link rel="stylesheet" href="css/layout.css">
+      
+   <link rel="stylesheet" href="css/media-queries.css">
+      
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/topnav.css">
+
+      <!-- Script
+   ================================================== -->
+      
+   <script src="js/modernizr.js"></script>
+      
+   <script src="main.js"></script>
+
+      <!-- Favicons
+   ================================================== -->
+      
+   <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body>
+   <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+    </div> 
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+
+      <!-- Work
+    ----------------------------------------------- -->
+      <div class="row work">
+
+
+
+         <div class="twelve main-col">
+
+            <div data-target="readme-toc.content" class="Box-body px-5 pb-5">
+               <article class="markdown-body entry-content container-lg" itemprop="text">
+                  <h1 tabindex="-1" id="user-content-music-recommendation-using-facial-recognition" dir="auto"><a
+                        class="heading-link" >Music recommendation
+                        using facial recognition<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1"
+                           width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h1>
+                  <h2 tabindex="-1" id="user-content-project-overview" dir="auto"><a class="heading-link">Project overview<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h2>
+                  <p dir="auto">Created a project that involves capturing the user's facial expression and using a deep
+                     neural network model to analyze the facial features and identify the user's emotional state. Based
+                     on the user's emotional state, the system recommends a song list that matches their mood.</p>
+                  <h2 tabindex="-1" id="user-content-architecture" dir="auto"><a class="heading-link"
+                        >Architecture<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h2>
+                  <p dir="auto"><img
+                           src="images/FACEPROJECTARC.png" style="max-width: 100%;"></a></p>
+                  <p dir="auto">System architecture consist of three parts data collection, model training &amp;
+                     Emotion detection and music recommendation.</p>
+                  <h3 tabindex="-1" id="user-content-data-collection" dir="auto"><a class="heading-link"
+                        >Data Collection<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h3>
+                  <p dir="auto">We obtain the Facial Landmarks from user through the camera and collect this data for
+                     model training or emotion detection</p>
+                  <h3 tabindex="-1" id="user-content-model-training" dir="auto"><a class="heading-link"
+                        >Model training<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h3>
+                  <p dir="auto">We train the model using the Data collected from the user i.e. Facial Landmarks to
+                     recognise
+                     particular landmark with specific emotion</p>
+                  <h3 tabindex="-1" id="user-content-emotion-detection" dir="auto"><a class="heading-link"
+                        >Emotion detection<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h3>
+                  <p dir="auto">We detect the emotion using the model that we trained on user data
+                     Music recommendation
+                     Finally, we recommend the music according to the emotion detected on YouTube music or
+                     Spotify.</p>
+                  <h2 tabindex="-1" id="user-content-system-overview" dir="auto"><a class="heading-link"
+                        >System Overview<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h2>
+                  <h3 tabindex="-1" id="user-content-data-collection-1" dir="auto"><a class="heading-link"
+                        >data collection<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h3>
+                  <p dir="auto">In data collection module it captures video of a person's face and hands using a camera,
+                     and extracts specific points on the face and hands called "landmarks". It then saves the
+                     coordinates of these landmarks as data in a file. The purpose of this code is to collect data
+                     for training a model that can detect emotions based on facial expressions and hand</p>
+                  <p dir="auto">movements.
+                     A library called Mediapipe is used to detect and extract the landmark data from the user's face and
+                     hands. It then stores this data as a list of coordinates for each frame of the video stream. Once
+                     the user has collected enough data, the code saves the data as a numpy array file with the
+                     input name. The numpy array file can be used later for model training or emotion detection.</p>
+                  <p dir="auto"><img
+                           src="images/FACEPROJECTDATACOLL.png" style="max-width: 100%;"></a></p>
+                  <h3 tabindex="-1" id="user-content-model-training-1" dir="auto"><a class="heading-link"
+                        >Model training<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                           version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h3>
+                  <p dir="auto">In model training it trains a neural network model to recognize certain gestures or
+                     poses
+                     from landmarks detected in a video stream. It first loads data from several numpy files
+                     that contain the landmark coordinates of the detected faces and hands in the video stream.
+                     It then converts the labels (gestures or poses) from strings to integers, and encodes them
+                     using one-hot encoding. The data is mixed up and shuffled for training.
+                     The model is defined with three dense layers, where the input is the landmark data and
+                     the output is a softmax probability distribution over the possible labels. The model is
+                     compiled with a categorical crossentropy loss function and trained for 50 epochs. Finally,
+                     the trained model is saved, and the label names are saved in a separate numpy file.</p>
+                  <h3 tabindex="-1" id="user-content-emotion-detection-1" dir="auto"><a class="heading-link"
+                        >Emotion detection<svg class="octicon octicon-link"
+                           viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h3>
+                  <p dir="auto">In music recommendation module it uses computer vision and machine learning techniques
+                     to
+                     recognize a person's facial expression. It uses a webcam to capture the user's emotion by analyzing
+                     the landmarks on their face and hand gestures using computer vision techniques. It loads a
+                     pre-trained model to predict the user's emotio. When the user clicks the "Recommend me songs"
+                     button, the code opens a YouTube playlist page based on the user's input and their captured
+                     emotion.</p>
+                  <p dir="auto"><img
+                           src="images/FACEPROJECTPREDICT.png"style="max-width: 100%;"></a></p>
+                  <h3 tabindex="-1" id="user-content-result" dir="auto"><a class="heading-link"
+                        >Result:<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1"
+                           width="16" height="16" aria-hidden="true">
+                           
+                        </svg></a></h3>
+                  <p dir="auto"><img
+                           src="images/FACEPROJECTRESULT.png" style="max-width: 100%;"></a></p>
+               </article>
+            </div>
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+
+
+      <!-- Java Script
+ ================================================== -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+      <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+      <script src="js/jquery.flexslider.js"></script>
+      <script src="js/waypoints.js"></script>
+      <script src="js/jquery.fittext.js"></script>
+      <script src="js/magnific-popup.js"></script>
+      <script src="js/init.js"></script>
+
+</body>
+
+</html>
