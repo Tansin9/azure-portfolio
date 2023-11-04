@@ -22,23 +22,23 @@ Creating a potfoli website which will hold resume and project documentation of a
 ![javacode](image-5.png)
 The getVisitCount() function works as follows:
 
-    1) It first sets a local variable called count to the value 30.
+It first sets a local variable called count to the value 30.
 
-    2) It then uses the Fetch API to call the GetResumeCounter function.
+It then uses the Fetch API to call the GetResumeCounter function.
 
-    3) The Fetch API returns a promise, which is an object that represents the eventual completion or failure of an asynchronous operation.
+The Fetch API returns a promise, which is an object that represents the eventual completion or failure of an asynchronous operation.
 
-    4) The getVisitCount() function then uses the then() method on the promise to handle the successful completion of the request.
+ The getVisitCount() function then uses the then() method on the promise to handle the successful completion of the request.
 
-    5) The then() method takes a callback function as an argument. This callback function is called when the request is successful and the response is available.
+ The then() method takes a callback function as an argument. This callback function is called when the request is successful and the response is available.
 
-    6) The callback function in the getVisitCount() function first logs a message to the console indicating that the website called the function API.
+The callback function in the getVisitCount() function first logs a message to the console indicating that the website called the function API.
 
-    7) It then updates the count variable with the value of the count property in the JSON response.
+ It then updates the count variable with the value of the count property in the JSON response.
 
-    8) It finally updates the text content of the HTML element with the ID counter with the new value of the count variable.
+It finally updates the text content of the HTML element with the ID counter with the new value of the count variable.
 
-    9) If the request fails, the getVisitCount() function logs the error to the console.
+ If the request fails, the getVisitCount() function logs the error to the console.
 
 The getVisitCount() function is called when the DOMContentLoaded event is fired. The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
 
@@ -80,9 +80,9 @@ After creating the function go in local.setting.json to store connnection key so
 
 Inside the "Company.Function" namespace, there is a class named "Counter." It has two properties:
 
-    Id property: This is a string that represents an ID. The [JsonProperty(PropertyName = "id")] attribute is used to specify that when this class is converted to JSON, the property name in the JSON will be "id."
+ Id property: This is a string that represents an ID. The [JsonProperty(PropertyName = "id")] attribute is used to specify that when this class is converted to JSON, the property name in the JSON will be "id."
 
-    Count property: This is an integer that represents a count. The [JsonProperty(PropertyName = "count")] attribute is used to specify that in the resulting JSON, the property name will be "count."
+Count property: This is an integer that represents a count. The [JsonProperty(PropertyName = "count")] attribute is used to specify that in the resulting JSON, the property name will be "count."
 
 now we are going to create bindings
 ![bindings 1](image-2.png)
