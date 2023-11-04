@@ -7,7 +7,7 @@
    ================================================== -->
       
    <meta charset="utf-8">
-      <title>My New Page</title>
+      <title>azure-portfolio website</title>
       
    <meta name="description" content="">
       
@@ -47,7 +47,7 @@
 <body>
    <div class="topnav">
       <a class="active" href="index.html">Home</a>
-    </div> 
+   </div>
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
@@ -61,7 +61,239 @@
 
          <div class="twelve main-col">
 
-            <p>test</p>
+            <h1 tabindex="-1" id="user-content-azure-portfolio" dir="auto"><a class="heading-link"
+                  >azure-portfolio website<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                     version="1.1" width="16" height="16" aria-hidden="true">
+                     
+                  </svg></a></h1>
+            <p dir="auto">My own azure portfolio website</p>
+            <p dir="auto">Creating a potfoli website which will hold resume and project documentation of all projects i
+               created</p>
+            <h2 tabindex="-1" id="user-content-components" dir="auto"><a class="heading-link"
+                  >components<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1"
+                     width="16" height="16" aria-hidden="true">
+                     
+                  </svg></a></h2>
+            <ul dir="auto">
+               <li>azure static web app</li>
+               <li>azure function</li>
+               <li>azure cosmos db</li>
+               <li>github actions</li>
+            </ul>
+            <h2 tabindex="-1" id="user-content-section-1-building-the-frontend" dir="auto"><a class="heading-link"
+                  >Section 1: Building the frontend<svg
+                     class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                     aria-hidden="true">
+                  
+                  </svg></a></h2>
+            <ul dir="auto">
+               <li>
+                  <p dir="auto">Created html page to contain Resume info and add resume information
+                     
+                     <img
+                           src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-10.png" alt="front end"
+                           style="max-width: 100%;">
+                           
+                           
+                  </p>
+               </li>
+               <li>
+                  <p dir="auto">adding the documentation of all the project
+                     <img
+                           src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-11.png" alt="doc pro"
+                           style="max-width: 100%;">
+                  </p>
+               </li>
+            </ul>
+            <h3 tabindex="-1" id="user-content-implemented-javascript-code-for-the-visitor-counter" dir="auto"><a
+                  class="heading-link" >implemented
+                  javascript code for the visitor counter<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                     version="1.1" width="16" height="16" aria-hidden="true">
+                     
+                  </svg></a></h3>
+            <p dir="auto">It is a JavaScript function called getVisitCount(). This function uses the Fetch API to call
+               an Azure Function called GetResumeCounter. The GetResumeCounter function returns a JSON object containing
+               the current value of a counter.
+               <img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-5.png" alt="javacode" style="max-width: 100%;">
+               The getVisitCount() function works as follows:
+            </p>
+            <p dir="auto">It first sets a local variable called count to the value 30.</p>
+            <p dir="auto">It then uses the Fetch API to call the GetResumeCounter function.</p>
+            <p dir="auto">The Fetch API returns a promise, which is an object that represents the eventual completion or
+               failure of an asynchronous operation.</p>
+            <p dir="auto">The getVisitCount() function then uses the then() method on the promise to handle the
+               successful completion of the request.</p>
+            <p dir="auto">The then() method takes a callback function as an argument. This callback function is called
+               when the request is successful and the response is available.</p>
+            <p dir="auto">The callback function in the getVisitCount() function first logs a message to the console
+               indicating that the website called the function API.</p>
+            <p dir="auto">It then updates the count variable with the value of the count property in the JSON response.
+            </p>
+            <p dir="auto">It finally updates the text content of the HTML element with the ID counter with the new value
+               of the count variable.</p>
+            <p dir="auto">If the request fails, the getVisitCount() function logs the error to the console.</p>
+            <p dir="auto">The getVisitCount() function is called when the DOMContentLoaded event is fired. The
+               DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed,
+               without waiting for stylesheets, images, and subframes to finish loading.</p>
+            <p dir="auto">This function can be used to implement a simple counter that tracks the number of times a
+               website has been visited. The counter value is stored in an Azure Function, so it can be persisted across
+               different sessions and devices.</p>
+            <h2 tabindex="-1" id="user-content-section-2-building-the-backend" dir="auto"><a class="heading-link"
+                  >Section 2: Building the backend<svg
+                     class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                     aria-hidden="true">
+                     
+                  </svg></a></h2>
+            <h3 tabindex="-1" id="user-content-setting-up-our-cosmos-db-resources" dir="auto"><a class="heading-link"
+                  >Setting up our cosmos DB resources<svg
+                     class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                     aria-hidden="true">
+                     
+                  </svg></a></h3>
+            <p dir="auto">We are setting up our cosmos DB resources to store the counter data which is the Number of
+               times the Html page was parsed</p>
+            <ul dir="auto">
+               <li>
+                  <p dir="auto">Create a cosmos DB account and deploy it
+                     <img
+                           src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/createcosmosdbacc-1.png" alt="cosmosdb acc"
+                           style="max-width: 100%;">
+               </li>
+               <li>
+                  <p dir="auto">after deploying we will create a database inside the account</p>
+               </li>
+               <li>
+                  <p dir="auto">And inside the database we will create the container which will hold the data inside a
+                     item
+                     <img
+                           src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/dbcounteritem.png" alt="database"
+                           style="max-width: 100%;">
+                     The data we are storing is a count (which is the Number of times the Html page was parsed)
+                  </p>
+               </li>
+            </ul>
+            <h3 tabindex="-1" id="user-content-setting-up-azure-function" dir="auto"><a class="heading-link"
+                 >Setting up Azure function<svg class="octicon octicon-link"
+                     viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                     
+                  </svg></a></h3>
+            <p dir="auto">Azure Functions is an event-driven, serverless compute platform that helps you develop more
+               efficiently using the programming language of your choice.
+               Fuctions have bindings which also us to connect other resources to our function</p>
+            <p dir="auto">We will use azure extention in visual studio code to create function</p>
+            <ul dir="auto">
+               <li>Click on Create new project and use httptrigger template</li>
+            </ul>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/createfunctionproject.png" alt="create function"
+                     style="max-width: 100%;"></p>
+            <p dir="auto">After creating the function go in local.setting.json to store connnection key so we can add
+               bindings to function (this file doesnt got push to github so dont worry about exposing the key)</p>
+            <ul dir="auto">
+               <li>go on azure portal inside the cosmon db account, go to keys section and copy the "PRIMARY CONNECTION
+                  STRING" to the local.setting.json</li>
+            </ul>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/dbkeyconnection.png" alt="dbkey"
+                     style="max-width: 100%;">
+               <img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image.png" alt="local json file"
+                     style="max-width: 100%;">
+            </p>
+            <ul dir="auto">
+               <li>We need to add a Class so that we can describe the counter object</li>
+            </ul>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-1.png" alt="counter class"
+                     style="max-width: 100%;"></p>
+            <p dir="auto">Inside the "Company.Function" namespace, there is a class named "Counter." It has two
+               properties:</p>
+            <p dir="auto">Id property: This is a string that represents an ID. The [JsonProperty(PropertyName = "id")]
+               attribute is used to specify that when this class is converted to JSON, the property name in the JSON
+               will be "id."</p>
+            <p dir="auto">Count property: This is an integer that represents a count. The [JsonProperty(PropertyName =
+               "count")] attribute is used to specify that in the resulting JSON, the property name will be "count."</p>
+            <p dir="auto">now we are going to create bindings
+              <img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-2.png" alt="bindings 1" style="max-width: 100%;">
+               there are two bindings in the image
+            </p>
+            <ul dir="auto">
+               <li>1st binding tells the function to read the counter document with the ID 1 from the Counter container
+                  in the AzureResume database. The Connection property specifies the connection string to the Azure
+                  Cosmos DB account.</li>
+               <li>2nd binding tells the function to write the counter document to the Counter container in the
+                  AzureResume database. The IAsyncCollector type is used to collect the counter documents that need to
+                  be updated.</li>
+            </ul>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-3.png" alt="bindings 2" style="max-width: 100%;">
+            </p>
+            <ul dir="auto">
+               <li>Once the counter has been updated, the function returns a JSON response containing the updated
+                  counter value.</li>
+            </ul>
+            <p dir="auto">we can test this locally after lauching the function locally we can see that the counter gets
+               updated</p>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/azuregetcountfun.png" alt="Alt text"
+                     style="max-width: 100%;"></p>
+            <h2 tabindex="-1" id="user-content-section-3-deploying-to-azure" dir="auto"><a class="heading-link"
+                  >Section 3: Deploying to Azure<svg class="octicon octicon-link"
+                     viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                     
+                  </svg></a></h2>
+            <p dir="auto">We'll deploy our azure function to azure, we need to add a application setting for the cosmos
+               db key (because local.setting.json file doesnt get push to github)</p>
+            <ul dir="auto">
+               <li>copy the "PRIMARY CONNECTION STRING" and go to azure portal, function app configuration and paste the
+                  key inside a new application setting</li>
+            </ul>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/azurekeyconnection.png" alt="key add"
+                     style="max-width: 100%;"></p>
+            <p dir="auto">After that grab the fuction url and update our javascript code with it
+               <img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-6.png" alt="fuction url" style="max-width: 100%;">
+               <img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-4.png" alt="javacode with fuction url"
+                     style="max-width: 100%;">
+            </p>
+            <ul dir="auto">
+               <li>deploy to azure static web apps</li>
+            </ul>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-7.png" alt="deploy" style="max-width: 100%;"></p>
+            <p dir="auto">when asked give it location of app and api</p>
+            <p dir="auto">after that we need to add the website url in function cors</p>
+            <ul dir="auto">
+               <li>Cross-Origin Resource Sharing (CORS) is a security feature that restricts cross-domain HTTP requests.
+                  By default, browsers block requests to resources hosted on a different domain than the current page.
+                  CORS allows the server to specify which origins are allowed to access its resources.
+                  we'll deploy our static site to our blob container</li>
+            </ul>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-8.png" alt="cros" style="max-width: 100%;"></p>
+            <p dir="auto">The Azure Static Web Apps build configuration is powered either by GitHub Actions or Azure
+               Pipelines. Each site has a YAML configuration file that controls how a site is built and deployed.</p>
+            <p dir="auto">Azure Static Web Apps comes with built-in support for GitHub Actions. GitHub Actions is a
+               continuous integration and continuous delivery (CI/CD) platform that allows you to automate your software
+               development and deployment workflows.</p>
+            <p dir="auto">Azure Static Web Apps uses GitHub Actions to automatically build and deploy your static web
+               app to Azure when you push changes to your GitHub repository. This allows you to have a continuous
+               deployment pipeline, which means that your web app will always be up-to-date with the latest changes.</p>
+            <p dir="auto"><img
+                     src="https://raw.githubusercontent.com/Tansin9/azure-portfolio/main/image-9.png" alt="git actions" style="max-width: 100%;">
+            </p>
+            <h3 tabindex="-1" id="user-content-and-we-are-done" dir="auto"><a class="heading-link"
+                  >And we are done!!<svg class="octicon octicon-link" viewBox="0 0 16 16"
+                     version="1.1" width="16" height="16" aria-hidden="true">
+                     
+                  </svg></a></h3>
+            <p dir="auto">We have built a portfoli/resume website on Azure with static web apps, Fuctions, CosmosDB and
+               GitHub Actions</p>
+
 
          </div> <!-- main-col end -->
 
